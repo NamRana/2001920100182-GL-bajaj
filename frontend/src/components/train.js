@@ -1,10 +1,11 @@
 import React from 'react';
+import styles from './TrainTable.module.css';
 
 const TrainTable = ({ trainsData }) => {
   return (
-    <div>
-      <h2>Train Schedule</h2>
-      <table>
+    <div className = {styles.container}>
+      
+      <table className={styles.trainTable}>
         <thead>
           <tr>
             <th>Train Name</th>

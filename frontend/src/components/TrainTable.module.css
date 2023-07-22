@@ -1,0 +1,68 @@
+/* TrainTable.module.css */
+.trainTable {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    overflow: scroll;
+    width: 100%;
+    opacity: 0; /* Initially set to 0 for fade-in animation */
+    /* border: 1px solid black; */
+    animation: fadeIn 0.5s ease-in-out forwards; /* Fade-in animation */
+    z-index: 5;
+    border-radius: 8px;
+
+    background-color: #89da53;
+  }
+
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+
+
+  .container{
+    padding : 10rem;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:4rem;
+  }
+  /* table {
+    border: 1px solid black;
+    background-color: rgba(173, 216, 230, 1);
+  }
+  
+   */
+
+   @media screen and  (max-width: 900px) {
+    .container{
+        padding : 2rem;
+        width: 96%;
+        /* display: flex;
+        align-items: center; */
+        /* flex-direction: column;
+        gap:4rem; */
+      }
+  }
+  
+  .trainTable th,
+  .trainTable td {
+
+        border: 1px solid black;
+    /* border: 1px solid #dddddd; */
+
+    text-align: left;
+    padding: 2rem;
+    transition: background-color 0.3s ease-in-out; /* Hover effect transition */
+  }
+  
+  .trainTable th {
+    background-color: #f2f2f2;
+  }
+  
+  .trainTable tr:hover {
+    background-color: #f8f8f8; /* Hover effect background color */
+  }
+  
